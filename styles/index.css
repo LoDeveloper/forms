@@ -1,0 +1,64 @@
+
+.container {
+    display: flex
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form {
+    width: 900;
+    height: 596;
+    background-color: blueviolet;
+    padding: 20px;
+    margin: 100px;
+
+}
+
+.form-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.title {
+   font-size: 48px;
+   text-align: center;
+   color: white;
+}
+
+.label {
+    margin: 10px;
+}
+
+.input-field {
+     display: block;
+     box-sizing: border-box;
+     justify-content: flex-start;
+     width: 50%;
+     border: 1px solid black;
+     background-color: aquamarine;
+     margin: 10px;
+
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.submit-btn {
+   margin: 10px;
+   border: 1px solid black;
+   border-radius: 5px;
+   box-shadow: 2px;
+   padding: 10px;
+   background-color: blue;
+   font-weight: bold;
+   color: white;
+}
+
+.submit-btn:hover {
+    background-color: brown;
+    
+}
