@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <title>Forms</title>
 </head>
@@ -14,9 +17,10 @@
     <form class="form" action="">
       <div class="form-box">
          <h1 class="title">Travel agency</h1>
-         <h2>Where would you like to go next</h2>
+         <h2 class="sub-title">Where would you like to go next</h2>
+
             <label for="full name" class="label">Full name</label>
-               <input type="text" name="name" class="input-field">
+               <input type="text" name="name" class="input-field" placeholder="Your full name">
             <label for="email" class="label">Email</label>
                <input type="email" placeholder="Your Email" class="input-field">
             <label for="choose country" class="label">Choose the country</label>
@@ -25,15 +29,19 @@
                   <option value="italy">Italy</option>
                   <option value="england">England</option>
                   <option value="japan">Japan</option>
+                  <option value="brasil">Brazil</option>
+                  <option value="canada">Canada</option>
                </select>
-            <label for="travellers" class="label">How many travellers</label>
+            <label for="travellers" class="label">Are you part of the EU</label>
                <select name="travellers" id="select" class="input-field">
                   <option value="yes">Yes</option>
                   <option value="no">No</option>
-                  <option value="i don´t know">I don´t know</option>
                </select>
             <label for="password" class="label">Your password</label>
-               <input type="password" placeholder="Your password" class="input-field" minlength="8">     
+               <input type="password" placeholder="Your password" class="input-field" minlength="8">
+            <label for="message" class="label">Your message</label>
+
+               <textarea name="message" id="message" class="textarea">Please write your message here</textarea>
         <button type="submit" class="submit-btn" type="submit">Submit</button>
       </div>
       <div class="img">
