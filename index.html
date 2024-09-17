@@ -12,16 +12,18 @@
 </head>
 <body>
   <main>
-   <h1 class="title">Travel agency</h1>
-   <h2 class="sub-title">Where would you like to go next</h2>
+     <div>
+          <h1 class="title">Travel agency</h1>
+          <h2 class="sub-title">Where would you like to go next</h2>
+    </div>
     <section class="container">
-     <form class="form" action="">
+     <form class="form" action="form">
       <div class="form-box">
-            <label for="full name" class="label">Full name</label>
-               <input type="text" name="name" class="input-field" placeholder="Your full name">
+            <label for="name" class="label">Full name</label>
+               <input type="text" name="name" class="input-field" placeholder="Your full name" required>
             <label for="email" class="label">Email</label>
-               <input type="email" placeholder="Your Email" class="input-field">
-            <label for="choose country" class="label">Choose the country</label>
+               <input type="email" placeholder="Your Email" class="input-field" required>
+            <label for="country" class="label">Choose the country</label>
                <select name="country" id="country" class="input-field">
                   <option value="sweden">Sweden</option>
                   <option value="italy">Italy</option>
@@ -36,11 +38,11 @@
                   <option value="no">No</option>
                </select>
             <label for="password" class="label">Your password</label>
-               <input type="password" placeholder="Your password" class="input-field" minlength="8">
+               <input type="password" placeholder="Your password" class="input-field" required minlength="8">
             <label for="message" class="label">Your message</label>
 
                <textarea name="message" id="message" class="textarea">Please write your message here</textarea>
-        <button type="submit" class="submit-btn" type="submit">Submit</button>
+        <button type="submit" class="submit-btn">Submit</button>
       </div>
       <div class="img">
         <img src="images/european-map_en.jpg" alt="european map">
